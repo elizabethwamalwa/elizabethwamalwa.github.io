@@ -1,9 +1,12 @@
 ----
+
 title: "Lab Challenges"
 layout: single
 permalink: /lab-challenges/
 author_profile: true
 ---
+
+
 
 ## 🧪 Lab-Based Challenges and Write-Ups
 
