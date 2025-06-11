@@ -1,12 +1,8 @@
 ---
----
----
 title: "Resume"
 layout: single
 permalink: /resume/
 author_profile: true
----
-
 ---
 
 ## 👩‍💻 Objective
@@ -80,4 +76,3 @@ Results-driven QA Engineer with a strong track record in software testing, bug t
 
 **Bachelor of Business Information Technology**  
 *KCA University*
-
