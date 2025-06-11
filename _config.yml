@@ -32,7 +32,6 @@ timezone: Africa/Nairobi
 include:
   - _pages
 
-
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -48,7 +47,7 @@ author:
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://your-portfolio-site.github.io"
+      url: "https://elizabethwamalwa.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/Wamalwaelizabeth"
