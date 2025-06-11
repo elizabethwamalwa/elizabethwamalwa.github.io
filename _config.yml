@@ -88,11 +88,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  - scope:
-      path: "_pages/index.md"
-      type: pages
-    values:
-      layout: splash
 
 category_archive:
   type: liquid
