@@ -9,3 +9,6 @@ main:
     url: /lab-challenges/
   - title: "Contact"
     url: /contact/
+      - title: "About"
+    url: /about/
+
