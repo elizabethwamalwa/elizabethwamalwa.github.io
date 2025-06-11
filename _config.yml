@@ -14,39 +14,24 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: WAMALWA ELIZABETH
-email:Elizabethwamalwa001@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Hello World😉, Wamalwa Elizabeth is my name but you can call me liz. A Software developer in tech with 3 years in QA and software testing .I am transtioning into cloud and cyber security and this is my way of documenting my transition.welcome to my space.
+email: Elizabethwamalwa001@gmail.com
+description: >-
+  Hello! I’m Wamalwa Elizabeth, a software developer with 3 years of experience in QA and software testing. I'm currently transitioning into cloud and cybersecurity. This space documents my journey.
 twitter_username: Wamalwaelizabeth
 github_username: elizabethwamalwa
 minimal_mistakes_skin: default
 search: true
 
-# Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
-# Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 5
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Africa/Nairobi
 
 include:
   - _pages
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-# Plugins (previously gems:)
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -56,37 +41,36 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Elizabeth wamalwa"
+  name   : "Elizabeth Wamalwa"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Passionate about continous learning and creativity, i choose to merge all my intrests in tech and build solutions for everyday problems"
+  bio    : "A lifelong learner and creative problem solver, I merge my passions in tech to build solutions that matter."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://"
+      url: "https://your-portfolio-site.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/Wamalwaelizabeth"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/elizabethwamalwa"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/elizabeth-wamalwa"
 
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/Wamalwaelizabeth"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/elizabethwamalwa"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/elizabeth-wamalwa"
 
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
@@ -97,13 +81,17 @@ defaults:
       comments: true
       share: true
       related: true
-  # _pages
   - scope:
       path: "_pages"
       type: pages
     values:
       layout: single
       author_profile: true
+  - scope:
+      path: "_pages/index.md"
+      type: pages
+    values:
+      layout: splash
 
 category_archive:
   type: liquid
