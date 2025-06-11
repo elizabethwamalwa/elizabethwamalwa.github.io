@@ -1,13 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Homepage</title>
+    <title>Render Markdown</title>
+    <!-- Load marked.js (Markdown parser) -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a simple homepage example.</p>
-    <a href="/about">Learn more about us</a>
+    <div id="content"></div> <!-- Markdown will be rendered here -->
+
+    <script>
+        // Fetch and render the .md file
+        fetch('index.md')  // Replace with your .md file path
+            .then(response => response.text())
+            .then(markdown => {
+                // Convert Markdown to HTML
+                document.getElementById('content').innerHTML = marked.parse(markdown);
+            })
+            .catch(err => {
+                console.error("Failed to load Markdown:", err);
+                document.getElementById('content').innerHTML = 
+                    "<p>Error loading content. Make sure 'content.md' exists.</p>";
+            });
+    </script>
 </body>
 </html>
